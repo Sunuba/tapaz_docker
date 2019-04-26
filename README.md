@@ -20,7 +20,7 @@ icra edin.
 
 ## Məlumat Bazasına bağlanmaq
 
-docker-compose faylının içində məlumat bazasında bağlanmaq üçün phpmyadmin və adminer konteynerləri də təyin edilmişdir. 
+docker-compose faylının içində məlumat bazasında bağlanmaq üçün phpmyadmin konteyneri də təyin edilmişdir. 
 Proses bitdikdən sonra chrome vasitəsilə məlumat bazasına qoşula bilərsiniz. 
     
     Bunun üçün localhost:8080 url-ini ziyarət edin. Bu zaman sizdən istifadəçi adı və şifrə tələb olunacaq.
