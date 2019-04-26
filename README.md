@@ -19,6 +19,7 @@ komandasını işə salın və yaradılmış şəbəkə, konteyner və s. məlum
     hamısını silin. 
     
 QEYD: mysql_data_folder MySQL bazasına aid məlumatları özündə saxlayır və -v həmin folderə toxunmur, beləliklə hər dəfə yeni docker-compose up --build komandasını işlətdikdə sizin məlumatlar öz yerində qalır.
+docker-compose faylında həmin sətir deaktivdir, aktivləşdirərək yuxarıda qeyd olunan asanlıqdan yararlana bilərsiniz.
 
 Daha sonra 
 
