@@ -1,7 +1,7 @@
 # Necə istifadə etməli?
     1. Faylları clone edin
     2. hər hansı terminal vasitəsilə folderin içinə daxil olun
-    3. docker-compose up komandasını işə salın.
+    3. docker-compose up --build komandasını işə salın.
     
     Bu zaman docker-compose faylındakı komandalara uyğun olaraq konteynerlər yaradılmağa başlayacaq
     Bütün proses bitdikdən sonra məlumat avtomatik olaraq bazaya yazılmağa başlayacaq.
@@ -10,7 +10,9 @@ Hər hansı bir anda python kodlara dəyişiklik etdikdə:
     
     docker-compose down -v 
 komandasını işə salın və yaradılmış şəbəkə, konteyner və s. məlumatların 
-    hamısını silin.
+    hamısını silin. 
+    
+QEYD: mysql_data_folder MySQL bazasına aid məlumatları özündə saxlayır və -v həmin folderə toxunmur, beləliklə hər dəfə yeni docker-compose up --build komandasını işlətdikdə sizin məlumatlar öz yerində qalır.
 
 Daha sonra 
 
