@@ -1,0 +1,7 @@
+version: '3.1'
+
+services:
+  tapaz:
+      build: .
+      container_name: tapaz
+      command: python tapaz.py
