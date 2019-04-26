@@ -37,15 +37,3 @@ services:
       - mysql
     ports: 
       - 8080:80
-  
-  adminer:
-    image: adminer
-    container_name: adminer
-    environment: 
-      - ADMINER_DESIGN=nette
-    depends_on: 
-      - mysql
-    links: 
-      - mysql
-    ports: 
-      - 8090:8080
