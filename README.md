@@ -3,8 +3,14 @@
     2. hər hansı terminal vasitəsilə folderin içinə daxil olun
     3. docker-compose up --build komandasını işə salın.
     
-    Bu zaman docker-compose faylındakı komandalara uyğun olaraq konteynerlər yaradılmağa başlayacaq
-    Bütün proses bitdikdən sonra məlumat avtomatik olaraq bazaya yazılmağa başlayacaq.
+    Bu zaman docker-compose faylındakı komandalara uyğun olaraq konteynerlər yaradılmağa başlayacaq.
+
+docker-compose komandası konteynerləri eyni anda yaratmağa başladığı üçün birinci dəfə tapaz konteyneri
+işə düşməyəcək. Çünki, konteynerin, yəni skriptin normal işləməsi üçün mysql məlumat bazası tam işlək vəziyyətdə olmalıdır, ancaq mysql-in işə düşməsi gecikdiyi üçün tapaz konteyneri ondan əvvəl yaranır. Bu zaman xəta əmələ gəlir. Bunun üçün bütün proses yekunlaşdıqdan sonra aşağıdakı komandanı işə salmaq lazımdır:
+
+    docker container start tapaz
+
+Beləliklə konteyner işə düşəcək və məlumatlar toplanaraq məlumat bazasına yazılacaq. Yuxarıda qeyd olunan problem mysql-in docker səhifəsində qeyd edilmişdir. hub.docker.com saytına daxil olun, axtarış yerinə mysql yazın və bu barədə daha ətraflı oxuyun.
     
 Hər hansı bir anda python kodlara dəyişiklik etdikdə:
     
